@@ -1,0 +1,18 @@
+<article class="listing">
+    <img [src]="housingLocationObj.photo" class="listing-photo">
+    <section class="listing-description">
+        <h2 class="listing-heading">{{housingLocationObj.name}}</h2>
+        <p class="listing-location">{{housingLocationObj.city}}, {{housingLocationObj.state}}</p>
+    </section>
+    <section class="listing-features">
+        <h2 class="section-heading">About this location</h2>
+        <ul>
+            <li>Available Units: {{housingLocationObj.availableUnits}}</li>
+            <li>Wifi available: {{housingLocationObj.wifi}}</li>
+            <li>Laundry available: {{housingLocationObj.laundry}}</li>
+        </ul>
+    </section>
+    <section class="listing-apply">
+        <a class="section-heading" [routerLink]="['/submitForm']">Click here to submit your interest</a>
+    </section>
+</article>

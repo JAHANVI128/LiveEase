@@ -1,0 +1,73 @@
+.listing {
+  margin: 20px;
+}
+
+.listing-photo {
+  height: 500px;
+  width: 50%;
+  object-fit: cover;
+  border-radius: 10px;
+  float: right;
+}
+
+.listing-heading {
+  font-size: 40pt;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.listing-location::before {
+  content: url("./location-pin.svg") / "";
+}
+
+.listing-location {
+  font-size: 20pt;
+  margin-bottom: 15px;
+}
+
+.listing-features > .section-heading {
+  color: var(--secondary-color);
+  font-size: 24pt;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.listing-features {
+  margin-bottom: 20px;
+}
+
+.listing-features li {
+  font-size: 14pt;
+  margin-left: 50px;
+}
+
+li {
+  list-style-type: circle;
+}
+
+.listing-apply .section-heading {
+  font-size: 20pt;
+  margin: 15px;
+  color: rgb(139, 102, 241);
+  padding: 10px 0;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.primary{
+  font-size: 12pt;
+  padding: 5px 10px ;
+  border-radius: 30px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.primary:hover{
+  font-size: 14pt;
+  cursor: pointer;
+  transition: 0.1s ease;
+  border-radius: 30px;
+}

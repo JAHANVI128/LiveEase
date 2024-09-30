@@ -1,0 +1,56 @@
+<div class="listing-apply">
+  <a class="section-heading">Submit your Interest</a>
+  <form [formGroup]="applyForm" class="form" (ngSubmit)="submitApplication()">
+    <div class="form-group">
+      <input
+        type="text"
+        placeholder="First name"
+        class="form__input"
+        id="first-name"
+        formControlName="firstName"
+        maxlength="10"
+        required
+      />
+      <label for="first-name" class="form__label">First name</label>
+    </div>
+
+    <div class="form-group">
+      <input
+        type="text"
+        placeholder="Last name"
+        class="form__input"
+        id="last-name"
+        formControlName="lastName"
+        maxlength="10"
+        required
+      />
+      <label for="last-name" class="form__label">Last name</label>
+    </div>
+
+    <div class="form-group">
+      <input
+        type="email"
+        placeholder="Email"
+        class="form__input"
+        id="email"
+        formControlName="email"
+        required
+      />
+      <label for="email" class="form__label">Email</label>
+    </div>
+
+    <div class="form-group">
+      <input
+        type="tel"
+        placeholder="Mobile No"
+        class="form__input"
+        id="mobileNo"
+        formControlName="mobileNo"
+        required
+      />
+      <label for="mobileNo" class="form__label">Mobile No</label>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>

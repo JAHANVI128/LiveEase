@@ -1,0 +1,8 @@
+<a [routerLink]="['/details', housingLocationObj.id]" class="listing-link">
+    <section class="listing">
+      <img [src]="housingLocationObj.photo" class="listing-photo">
+      <h2 class="listing-heading">{{housingLocationObj.name}}</h2>
+      <p class="listing-location">{{housingLocationObj.city}}, {{housingLocationObj.state}}</p>
+      <span class="learn-more">Learn More</span>
+    </section>
+</a>  

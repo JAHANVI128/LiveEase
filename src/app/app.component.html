@@ -1,0 +1,16 @@
+<nav class="navbar">
+  <div class="navbar-brand">
+    <img src="../assets/logo.svg" alt="Logo" class="logo">
+  </div>
+  
+  <ul class="nav-links">
+    <li *ngIf="router.url !== '/home'">
+      <a routerLink="/home">Home</a>
+    </li>
+    <li>
+      <a routerLink="/submitForm">Interest Form</a>
+    </li>
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>
